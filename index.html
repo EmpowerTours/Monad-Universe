@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Monad Odyssey</title>
+    <title>Monad Universe</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
@@ -19,48 +19,17 @@
         width: 6px;
       }
       ::-webkit-scrollbar-track {
-        background: rgba(131, 110, 249, 0.1); 
+        background: rgba(131, 110, 249, 0.1);
       }
       ::-webkit-scrollbar-thumb {
-        background: rgba(131, 110, 249, 0.5); 
+        background: rgba(131, 110, 249, 0.5);
         border-radius: 3px;
       }
       canvas {
         touch-action: none;
       }
     </style>
-    <script>
-      // Critical Polyfills for Web3 Libraries
-      window.global = window;
-      window.process = {
-        env: { NODE_ENV: 'production' },
-        version: '',
-        nextTick: function(callback) { setTimeout(callback, 0); }
-      };
-    </script>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@18.3.1",
-    "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
-    "react-dom": "https://esm.sh/react-dom@18.3.1",
-    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
-    "lucide-react": "https://esm.sh/lucide-react@0.344.0?deps=react@18.3.1,react-dom@18.3.1",
-    "@react-three/fiber": "https://esm.sh/@react-three/fiber@8.16.1?deps=react@18.3.1,react-dom@18.3.1,three@0.162.0",
-    "@react-three/drei": "https://esm.sh/@react-three/drei@9.105.4?deps=react@18.3.1,react-dom@18.3.1,three@0.162.0,@react-three/fiber@8.16.1",
-    "framer-motion": "https://esm.sh/framer-motion@11.0.8?deps=react@18.3.1,react-dom@18.3.1",
-    "three": "https://esm.sh/three@0.162.0",
-    "@privy-io/react-auth": "https://esm.sh/@privy-io/react-auth@1.60.1?deps=react@18.3.1,react-dom@18.3.1",
-    "semver": "https://esm.sh/semver@7.6.0",
-    "buffer": "https://esm.sh/buffer@6.0.3",
-    "events": "https://esm.sh/events@3.3.0",
-    "util": "https://esm.sh/util@0.12.5",
-    "assert": "https://esm.sh/assert@2.0.0",
-    "process": "https://esm.sh/process/browser"
-  }
-}
-</script>
-</head>
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
